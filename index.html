@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Neumorphism Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="light">
+  <div class="container">
+    <div class="toggleBtn" onclick="toggleTheme()">☀️</div>
+    <div class="calculator animate">
+      
+     <!-- Display -->
+<div class="display" id="display">0</div>
+
+<!-- Left & Right Buttons -->
+<div class="bottomButtons">
+  <div class="historyBtn" onclick="toggleHistory()">📜</div>
+  <div class="deleteBtn" onclick="deleteLast()">⌫</div>
+</div>
+
+<!-- History Panel -->
+<div class="historyPanel" id="historyPanel">
+  <ul id="historyList"></ul>
+</div>
+
+      <div class="buttons">
+        <span class="function">%</span>
+        <span class="function">√</span>
+        <span class="function">π</span>
+        <span class="function">x²</span>
+        <span id="clear" class="special">C</span>
+        <span>( )</span>
+        <span>/</span>
+        <span>*</span>
+        <span>7</span>
+        <span>8</span>
+        <span>9</span>
+        <span>-</span>
+        <span>4</span>
+        <span>5</span>
+        <span>6</span>
+        <span id="plus" class="special">+</span>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>+/-</span>
+        <span>0</span>
+        <span>00</span>
+        <span>.</span>
+        <span id="equal" class="special">=</span>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
